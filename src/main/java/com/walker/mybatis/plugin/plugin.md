@@ -24,5 +24,6 @@
     配置文件的解析；        
     spring boot 环境下Java Config配置；       
     如何加载？       
+    MyBatis启动时加载，通过`Configuration`，加载到`InterceptorChain`拦截器链中，执行SQL的过程中
     如何执行？
 3. 设计思想？
