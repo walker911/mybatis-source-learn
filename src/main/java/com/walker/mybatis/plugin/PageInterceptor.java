@@ -45,7 +45,7 @@ public class PageInterceptor implements Interceptor {
         String sql = boundSql.getSql();
         String limit = String.format("LIMIT %d,%d", rb.getOffset(), rb.getLimit());
         sql = sql + " " + limit;
-        System.out.println(sql);
+        System.err.println(sql);
 
         SqlSource sqlSource = new StaticSqlSource(ms.getConfiguration(), sql, boundSql.getParameterMappings());
 

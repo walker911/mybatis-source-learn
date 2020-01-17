@@ -2,7 +2,7 @@ package com.walker.mybatis;
 
 import org.apache.ibatis.reflection.DefaultReflectorFactory;
 import org.apache.ibatis.reflection.MetaClass;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author walker
