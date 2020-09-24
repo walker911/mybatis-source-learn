@@ -11,6 +11,7 @@
     <sql id="table">
         ${author}
     </sql>
+
     <select id="findByAuthorAndCreateTime" resultType="Article">
       select 
         <include refid="table">
@@ -19,4 +20,10 @@
       from article
       where author = #{author} and create_time > #{createTime}
   </select>
+
+    <!-- 查询 -->
+    <select id="findByAuthor" resultType="com.walker.mybatis.model.Article">
+        select * from article where author = #{author}
+    </select>
+
 </mapper>
